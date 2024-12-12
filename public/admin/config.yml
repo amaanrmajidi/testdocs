@@ -1,0 +1,21 @@
+backend:
+  name: test-repo # Change to 'github' when deploying
+  # repo: your-username/your-repo-name # Uncomment when deploying
+
+local_backend: true # For local development
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "docs"
+    label: "User Documentation"
+    folder: "content/docs"
+    create: true
+    format: "frontmatter"
+    extension: "mdx"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
