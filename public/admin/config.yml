@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: github-gateway
   repo: amaanrmajidi/testdocs # Replace with your actual GitHub username/repo
   branch: main # or master, depending on your default branch
 
